@@ -4,6 +4,7 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g",
 
 secret_message = []
 
+
 def decrypt(text):
     for key in range(0, 26):
         for letter in text:
@@ -13,7 +14,6 @@ def decrypt(text):
         print(key)
         print(secret_message)
         secret_message.clear()
-
 
 
 def encrypt(text, key):
@@ -26,7 +26,8 @@ def encrypt(text, key):
 
 
 running = True
-while running == True:
+while running:
+
     option = int(input("Please enter: 1 to decrypt, 2 to encrypt "))
 
     if option == 1:
